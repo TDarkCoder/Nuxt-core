@@ -1,0 +1,9 @@
+html, body {
+  font-family: var(--el-font-family);
+  color: var(--el-text-color-regular);
+  scroll-behavior: smooth;
+}
+
+main {
+  overflow-x: hidden !important;
+}
