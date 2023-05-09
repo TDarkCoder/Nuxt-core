@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     },
     modules: [
         '@element-plus/nuxt',
-        'nuxt-windicss',
+        '@nuxtjs/tailwindcss',
         '@nuxtjs/eslint-module',
         '@nuxtjs/i18n',
         '@nuxt/image-edge',
