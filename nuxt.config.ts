@@ -1,8 +1,7 @@
-import ru from './locales/ru';
-import uz_latn from './locales/uz_latn';
 import {useLocales} from './composables/useLocales';
 
 const isDev = process.env.APP_ENV !== 'production';
+const locale = process.env.APP_LOCALE ?? 'uz_latn';
 
 export default defineNuxtConfig({
     dev: isDev,
@@ -49,16 +48,9 @@ export default defineNuxtConfig({
     },
     i18n: {
         strategy: 'prefix_except_default',
-        defaultLocale: 'uz_latn',
+        defaultLocale: locale,
         locales: useLocales(),
-        vueI18n: {
-            legacy: false,
-            locale: 'uz_latn',
-            messages: {
-                ru,
-                uz_latn,
-            },
-        },
+        vueI18n: './i18n.config.ts',
     },
     storyblok: {
         accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
