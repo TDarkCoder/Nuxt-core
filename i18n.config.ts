@@ -1,5 +1,5 @@
-import ru from "~/locales/ru";
-import uz_latn from "~/locales/uz_latn";
+import ru from '~/locales/ru';
+import uz_latn from '~/locales/uz_latn';
 
 export default defineI18nConfig(() => ({
     legacy: false,

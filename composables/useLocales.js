@@ -7,6 +7,6 @@ export const useLocales = () => {
         {
             name: 'O\'zbekcha',
             code: 'uz_latn',
-        }
+        },
     ];
 };

@@ -18,6 +18,9 @@ export default defineNuxtConfig({
             isDev,
         },
     },
+    buildModules: [
+        '@nuxt/typescript-build',
+    ],
     modules: [
         '@element-plus/nuxt',
         '@nuxtjs/tailwindcss',
@@ -56,4 +59,4 @@ export default defineNuxtConfig({
         accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
         cacheProvider: 'memory',
     },
-})
+});
